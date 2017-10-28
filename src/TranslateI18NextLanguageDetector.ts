@@ -1,7 +1,7 @@
 import {
 	Injectable,
 	Inject,
-	OpaqueToken,
+	InjectionToken,
 	LOCALE_ID
 } from "@angular/core";
 
@@ -12,7 +12,7 @@ export class TranslateI18NextLanguagesSupport {
 
 	private static logger: ILogger = LoggerFactory.makeLogger(TranslateI18NextLanguagesSupport);
 
-	constructor(@Inject(LOCALE_ID) private locale: OpaqueToken) {
+	constructor(@Inject(LOCALE_ID) private locale: InjectionToken<string>) {
 	}
 
 	public getSupportedLanguage(supportedLanguages?: Array<string>): string {

@@ -1,5 +1,5 @@
 {
-  "name": "angular2-i18next",
+  "name": "ngx-i18next",
   "version": "1.1.2",
   "license": "MIT",
   "keywords": [
@@ -9,7 +9,7 @@
     "angular2-i18next",
     "ng2-i18next"
   ],
-  "author": "Alex Poter",
+  "author": "Alex Poter <a.poterenko@gmail.com>",
   "scripts": {
     "clean": "npm cache clean",
     "ngc-build": "node_modules/.bin/ngc -p tsconfig.json",
@@ -17,41 +17,34 @@
   },
   "dependencies": {
     "i18next": "2.5.1",
-    "i18next-xhr-backend": "0.5.3"
+    "i18next-xhr-backend": "0.5.3",
+    "ts-smart-logger": "0.0.4"
   },
   "peerDependencies": {
-    "@angular/core": "~4.0.1",
-
-    "ts-smart-logger": "~0.0.4",
-
-    "core-js": "~2.4.1",
-    "rxjs": "~5.2.0",
-    "zone.js": "~0.8.4"
+    "@angular/core": ">=5.0.0",
+    "rxjs": ">=5.0.0"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~4.0.1",
-    "@angular/compiler": "~4.0.1",
-    "@angular/core": "~4.0.1",
-
-    "ts-smart-logger": "~0.0.4",
-
-    "typescript": "~2.1.5",
+    "@angular/compiler-cli": "5.0.0-rc.8",
+    "@angular/compiler": "5.0.0-rc.8",
+    "@angular/core": "5.0.0-rc.8",
+    "typescript": ">=2.4.2 <2.5",
     "@types/core-js": "~0.9.34",
     "@types/node": "~6.0.46",
 
     "core-js": "~2.4.1",
-    "rxjs": "~5.2.0",
-    "zone.js": "~0.8.4",
+    "rxjs": "^5.5.0",
+    "zone.js": "^0.8.18",
 
     "gulp": "3.9.0",
     "i18next-parser": "0.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apoterenko/angular2-i18next.git"
+    "url": "https://github.com/apoterenko/ngx-i18next.git"
   },
   "bugs": {
-    "url": "https://github.com/apoterenko/angular2-i18next/issues"
+    "url": "https://github.com/apoterenko/ngx-i18next/issues"
   },
   "module": "index.js",
   "typings": "index.d.ts",

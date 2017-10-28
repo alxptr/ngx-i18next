@@ -8,7 +8,7 @@ import {LoggerFactory, ILogger, IEnvironmentLogger} from 'ts-smart-logger/index'
 import {LanguageDetectorAdapter} from './browser/LanguageDetectorAdapter';
 import {ILanguageDetector} from './browser/ILanguageDetector';
 import {I18NextOptions, ITranslationKeyMapping} from './I18NextOptions';
-import {TranslateI18NextLanguagesSupport} from "./TranslateI18NextLanguageDetector";
+import {TranslateI18NextLanguagesSupport} from './TranslateI18NextLanguageDetector';
 
 const i18next = require('i18next/index'),
     i18nextXHRBackend = require('i18next-xhr-backend/index');
@@ -38,7 +38,7 @@ export class TranslateI18Next {
         TranslateI18Next.logger.debug((logger: IEnvironmentLogger) => {
 	        logger.write('[$TranslateI18Next] The fallback language is', fallbackLng,
 		        '. The current language has been detected as', new browserLanguageDetectorCtor().detect(),
-		        '. The default language detector is looking at <@Inject(LOCALE_ID) locale: OpaqueToken> where <import {LOCALE_ID} from "@angular/core">',
+		        '. The default language detector is looking at <@Inject(LOCALE_ID) locale: InjectionToken<string>> where <import {LOCALE_ID} from "@angular/core">',
 	            '. You should provide your current locale for all services using <@NgModule({providers: [{provide: LOCALE_ID, useValue: "en-AU"}]})>',
 	            '. See also "supportedLanguages" optional parameter when <TranslateI18Next.init(...)> is called');
         });

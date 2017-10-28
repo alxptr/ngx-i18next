@@ -1,20 +1,17 @@
-# angular2-i18next
+# ngx-i18next
 
 An implementation of i18next wrapper for Angular2 [4.0.1 compatible].  
 
 ## Installation
 
-First you need to install the npm modules:
 ```sh
-npm install ts-smart-logger --save
-
-npm install angular2-i18next --save
+npm install ngx-i18next --save
 ```
 
 ## Demo
 
-**1** git clone --progress -v "git@github.com:apoterenko/angular2-i18next.git" "D:\sources"  
-**2** cd D:\sources\angular2-i18next\demo  
+**1** git clone --progress -v "git@github.com:apoterenko/ngx-i18next.git" "D:\sources"
+**2** cd D:\sources\ngx-i18next\demo
 **3** npm install  
 **4** npm start 
 
@@ -22,7 +19,7 @@ npm install angular2-i18next --save
 
 **main.ts**
 ```typescript
-import {TranslateI18NextModule} from 'angular2-i18next/index';
+import {TranslateI18NextModule} from 'ngx-i18next/index';
 
 @NgModule({
     bootstrap: [ApplicationComponent],
@@ -45,7 +42,7 @@ You can also pass the special options use and defaultUse which are each Arrays t
 The default plugins for defaultUse are [i18nextXHRBackend, browserLanguageDetectorCtor]
 
 ```typescript
-import {TranslateI18Next} from 'angular2-i18next/index';
+import {TranslateI18Next} from 'ngx-i18next/index';
 
 @Component({
   selector: 'app'

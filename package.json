@@ -1,12 +1,12 @@
 {
-  "name": "ngx-i18next",
+  "name": "ngx+i18next",
   "version": "1.2.0",
   "license": "MIT",
   "keywords": [
-    "angular",
-    "angular2",
+    "angular4",
+    "angular5",
     "i18next",
-    "angular2-i18next",
+    "ngx-i18next",
     "ng2-i18next"
   ],
   "author": "Alex Poter <a.poterenko@gmail.com>",
